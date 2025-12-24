@@ -1,15 +1,15 @@
 #Function to sum of all numbers in list
-def sum_of_numbers(list):    
-    sum = 0  
-    for num in list:
-        sum += num
-    return sum
+def sum_of_numbers(numbers):    
+    total = 0  
+    for num in numbers:
+        total += num
+    return total
 
 #Function to count vowels in strings
-def count_vowels(str):
-    new_str = str.lower()   #Change string in lowercase and store in new variable, because string is immutable
+def count_vowels(text):
+    text = text.lower()   
     vowel_count = 0
-    for ch in new_str:
+    for ch in text:
         if ch in "aeiou":
             vowel_count += 1
     return vowel_count
@@ -32,3 +32,4 @@ if __name__ == "__main__":
     print(f"Sum of all numbers in list is {sum_of_numbers(nums)}")
     print(f"Vowel count in {name} is {count_vowels(name)}")
     print(f"{digit} is {check_number(digit)}")
+
